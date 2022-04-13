@@ -9,9 +9,12 @@ const ItemDetail = ({index, name, price, stock, addToBasket}) => {
     return(
         <li className="item-detail">
             <p>Name: {name}</p>
-            <p>Price: £{price}</p>
+            <p>Price: £{price.toFixed(2)}</p>
             <p>Stock: {stock}</p>
-            <button onClick={handleClick}>Add to basket</button>
+            { stock > 0 ? 
+            <button onClick={handleClick}>Add to basket</button> : 
+            <button>Out of stock</button> }
+            
             <br/>
         </li>
 
