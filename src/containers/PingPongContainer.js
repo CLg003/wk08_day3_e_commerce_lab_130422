@@ -10,10 +10,14 @@ const PingPongContainer = () => {
     { name: "Cardboard Ping Pong Bat", price: 3, stock: 100 },
     { name: "Ping Pong Balls", price: 1, stock: 75 },
     { name: "Ping Pong Net", price: 10, stock: 8 },
-    { name: "Commemorative Gold-Plated 'Ping Pong Max' Framed Photograph", price: 2000, stock: 1}
+    {
+      name: "Commemorative Gold-Plated 'Ping Pong Max' Framed Photograph",
+      price: 2000,
+      stock: 1,
+    }
   );
 
-
+  const [user, setUser] = useState({ name: "Mate" });
 
   return (
     <div id="ping-pong">
