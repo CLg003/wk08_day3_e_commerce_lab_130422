@@ -1,8 +1,11 @@
-import './App.css';
+import "./App.css";
+import PingPongContainer from "./containers/PingPongContainer";
 
 function App() {
   return (
-    <p>Hello</p>
+    <>
+      <PingPongContainer />
+    </>
   );
 }
 
