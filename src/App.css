@@ -14,18 +14,23 @@ body {
 }
 
 #item-list {
+  width: 60%;
   display: flex;
   flex-direction: column;
-  margin: 20px;
 }
 
 #basket {
+  width: 40%;
   display: flex;
   flex-direction: column;
-  margin: 20px;
 }
 
 .basket-item {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+
+.remove-item {
+  margin-left: 20px;
 }

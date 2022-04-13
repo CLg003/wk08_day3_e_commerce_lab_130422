@@ -10,7 +10,9 @@ const ItemList = ({items, addToBasket}) => {
   return (
     <div id="item-list">
       <h2>Stock Items</h2>
-      {itemNodes}
+      <ol>
+        {itemNodes}
+      </ol>
     </div>
   );
 };

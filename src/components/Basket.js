@@ -12,7 +12,9 @@ const Basket = ({basket}) => {
   return (
     <div id="basket">
       <h2>Your shopping basket</h2>
-      {basketItemNodes}
+      <ol>
+        {basketItemNodes}
+      </ol>
     </div>
   );
 };

@@ -32,13 +32,22 @@ const PingPongContainer = () => {
       setItems(copyItems);
     }
 
+    const removeFromBasket = (index) => {
+      const itemToRemove = basket[index];
+      const newBasket = [...basket];
+      newBasket.splice(index, 1);
+      setBasket(newBasket);
+      const copyItems = [...items];
+      copyItems[]
+    }
+
   return (
     <div id="ping-pong">
         <Header user = {user} />
         {/* <UserContext.Provider value={{user}} > */}
             <div id="items-basket">
                 <ItemList items={items} addToBasket={addToBasket} />
-                <Basket basket={basket}/>
+                <Basket basket={basket}, removeFromBasket={removeFromBasket}/>
             </div>
         {/* </UserContext.Provider> */}
     </div>
