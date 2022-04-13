@@ -1,13 +1,18 @@
 import React from "react";
 
-const ItemDetail = () => {
+const ItemDetail = ({index, name, price, stock, addToBasket}) => {
 
+    const handleClick = () => {
+        addToBasket(index);
+    }
 
     return(
         <>
-        <p>Name:</p>
-        <p>Price:</p>
-        <p>Stock:</p>
+            <p>Name: {name}</p>
+            <p>Price: £{price}</p>
+            <p>Stock: {stock}</p>
+            <button onClick={handleClick}>Add to basket</button>
+            <br/>
         </>
 
     );

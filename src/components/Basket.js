@@ -1,9 +1,18 @@
 import React from "react";
+import BasketItems from "./BasketItems";
 
-const Basket = () => {
+const Basket = ({basket}) => {
+
+  const basketItemNodes = basket.map((item, index) => {
+      return (
+        <BasketItems key={index} index={index} name={item.name} price={item.price} />
+      );
+  })
+
   return (
     <div id="basket">
-      <p>This is the basket.</p>
+      <h2>Your shopping basket</h2>
+      {basketItemNodes}
     </div>
   );
 };

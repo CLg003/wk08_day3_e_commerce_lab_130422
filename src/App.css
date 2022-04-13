@@ -24,3 +24,8 @@ body {
   flex-direction: column;
   margin: 20px;
 }
+
+.basket-item {
+  display: flex;
+  justify-content: space-between;
+}
