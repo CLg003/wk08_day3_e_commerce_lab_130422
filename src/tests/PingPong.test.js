@@ -9,10 +9,21 @@ describe("PingPongContainer", () => {
   let container;
 
   beforeEach(() => {
-    container = mount(<PingPongContainer />);
+    container = mount(<PingPongContainer />)
   });
 
-  // it("should be able to retrieve item data", () => {
-  //   expect(runningTotal.text()).toEqual("Ping Pong Table");
+  // it('should be able to retrieve the user name' , () => {
+  //   const welcomeMessage = container.find('header > p');
+  //   expect(welcomeMessage.text()).toEqual("Welcome Máté");
   // });
+
+  // it('should be able to add item to basket', () => {
+  //     const welcomeMessage = container.find('header > p');
+  //     expect(welcomeMessage.text()).toEqual("Welcome Máté");
+  //   });
+
 });
+
+
+// const runningTotal = container.find('#running-total');
+//     expect(runningTotal.text()).toEqual('5');
